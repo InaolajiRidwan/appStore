@@ -42,7 +42,7 @@ const Mobiles = () => {
 
   useEffect(() => {
     const filteredApi = product.filter((item) =>
-      item.title.toLowerCase().includes(search)
+      item.category.toLowerCase().includes(search)
     );
     setFilteredProducts(filteredApi);
   }, [product, search]);
